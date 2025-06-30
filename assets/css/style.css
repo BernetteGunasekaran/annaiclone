@@ -1,0 +1,158 @@
+:root {
+
+    --primary: #1e3a8a;
+    --secondary:#fff;
+    --primarylight:#1d4ed8;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    min-height:100dvh;
+	height: 100;
+ 
+}
+  /* Title section  */
+
+.title-section{
+    background-color: var(--primary);
+    color:var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 30px;      
+    
+}
+
+ .title-section span i{
+   padding:9px
+}
+
+.title-text{
+    margin: 0;
+}
+
+ /* Header menu section  */
+
+.header-menu{
+    
+	display: flex;
+	justify-content:space-around;
+    align-items: center;  
+   
+    padding: 0 0px;
+    
+	
+}
+.header-menu ul {    
+    display: flex;
+    list-style:none;
+    
+}
+  /* header sub division for logo */
+
+.header-menu .header-menu-logo{
+  display: grid;
+  grid-template-areas:    
+    "menu content"
+    "menu content";
+  grid-template-columns:70px auto;
+  background-color: #ffffff; 
+  padding: 5px;   
+   
+}
+
+.header-menu-logo.logo{
+grid-area: menu;
+padding-right: 40px;
+
+}
+
+.header-menu-logo.logo-text{
+grid-area: content;
+
+}
+.header-menu-logo div h1{
+    color:var(--primarylight);
+}
+
+.header-menu-logo div p{
+    color:rgb(100, 98, 98);
+    font-weight:400;
+}
+
+
+/* header sub division for menu like home about tests etc.. */
+
+.header-menu .header-menu-item ul li a{
+    color:rgb(69, 65, 65);
+    font-weight: 600;    
+}
+
+.header-menu .header-menu-item ul li a:hover{
+    color:var(--primarylight);
+    font-weight: 600;    
+}
+.header-menu ul li {
+	margin-right: 40px;
+    text-align: center;     
+}
+
+.header-menu ul li a{
+	text-decoration: none;
+}
+
+ul li::after{
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    height: 2px;
+    transform:scaleX(0);
+    transition:transform 300ms;
+    margin-top: 10px;
+}
+
+ul li:hover::after{    
+   transform:scaleX(1);  
+}
+
+.header-menu .header-menu-button{
+    padding: 8px 20px;
+    border-radius: 5px;
+	border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--primarylight);
+}
+
+.header-menu .header-menu-button:hover{
+ background-color: var(--primary);
+}
+
+/* Hero Section */
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+
+    color: #1c1717;
+    background-color:var(--primarylight);
+    padding: 300px;
+    align-items:flex-start
+
+
+}
+
+
+
+
