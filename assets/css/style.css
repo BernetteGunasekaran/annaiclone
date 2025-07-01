@@ -407,7 +407,7 @@ grid-area: content;
 
 .reason{
   width: 100%;
-  height: 200px;
+ 
   border: 1px solid var(--secondary);
   display: flex;
   justify-content: space-evenly;
