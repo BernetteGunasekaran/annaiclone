@@ -1,14 +1,17 @@
 :root {
 
-    --primary: #1b53e0;
+ --primary: #1b53e0;
     --secondary:#fff;
-    --primarylight:#13328c;
+    --primarylight:hsl(225, 76%, 31%);
     --section:#f9fafb;
+    --herosection:#284aa1;
+
+    
 
 }
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     
 }
@@ -145,10 +148,11 @@ grid-area: content;
 
 .hero-section{
     display: flex;
-    justify-content:space-between;    
+    justify-content:space-around;    
     color:var(--secondary);
     background-color:var(--primarylight);    
     padding: 70px 60px;
+    
     
 }
 
@@ -237,15 +241,11 @@ grid-area: content;
 
 
 /* hero section second part */
-.quick-Stats{
-    
-    width: 50%;
-}
+
 
 .quick-Stats {
   display: flex;
   flex-wrap: wrap;
-  row-gap:5px /* optional spacing */
 
   }
 .box {
@@ -263,7 +263,7 @@ grid-area: content;
 }
 
 .quick-Stats{
-    background-color:#284aa1;
+    background-color:var(--herosection);
     border-radius: 8px;
     padding:40px;
 }
@@ -272,20 +272,15 @@ grid-area: content;
 
 
 .Featured-Health-Packages{
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
+ 
   text-align: center;   
-  background-color:#e5e7eb;
-  padding: 30px;
-
+  background-color:var(--section);
+  padding: 10px 0 40px 0;  
 }
-
-
 .packages-card{  
   display: flex;
   justify-content: space-evenly;  
-  background-color: #e5e7eb;
+  background-color:var(--section);
   flex-wrap: wrap;
 
 }
@@ -300,7 +295,7 @@ grid-area: content;
     padding: 5px;
     width: 50%;
     background-color: var(--primary);
-    color: #e5e7eb;
+    color:var(--section);
     border-radius: 10px;
     position: absolute;
     top:-15px;
@@ -308,15 +303,14 @@ grid-area: content;
 }
 
 .price-card{
-  padding: 10px; 
+  flex-basis: 300px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);  
   text-align: center;
-  background: white;
-  font-family: 'Segoe UI', sans-serif;
-  transition: transform 0.3s;
-  margin: 8px 0;
-  
+  background: white; 
+  transition: transform 0.3s;  
   
 }
 .price-card:hover {
@@ -388,10 +382,10 @@ grid-area: content;
 /* Why choose our Lab section */
 
 .WhyChoose-text{  
-  display: flex;
-  flex-direction: column; 
   text-align: center;   
   background-color:var(--secondary);
+  
+   padding: 10px 0 40px 0;  
     
 }
 
@@ -400,49 +394,47 @@ grid-area: content;
     color: rgb(93, 92, 92);
 }
 
-.bg-color{
-   padding: 40px;
-   background-color: #e5e7eb;
-
-}
 
 .reason{
-  width: 100%;
-
   border: 1px solid var(--secondary);
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   flex-wrap: wrap;
   background-color: #fff;
-  
+
+
+ 
 }
 
 .reason1{
-  width: 280px;
-  padding: 24px;
+  text-align: center;
+  padding: 10px;
   background-color:var(--secondary);
-  border-radius: 5px;
+  flex-basis: 200px;  
+
   }
 
-  .reason1 span i{
-    font-size:20px;
-   padding: 10px 20px;
+  .reason1 span { 
+   padding: 10px;
+   border-radius:50%;
    color: var(--primary);
    background-color: #e5e8f2;
-   border-radius: 50%;
+  
+
   }
 
-  .reason1 span i:hover{  
+
+  .reason1 span:hover{  
    background-color: #c1cae4;  
   }
  
  /* Our services */
 
- .Our-services{
-   
-    padding: 50px;
-    background-color:var(--secondary);
-    text-align: center;
+ .Our-services{  
+  align-items:center;
+  text-align: center;   
+  background-color:var(--section); 
+  padding: 30px;
    
 }
 .Our-services p{
@@ -451,13 +443,23 @@ grid-area: content;
     padding: 10px 0 40px 0;   
     
 }
-.ourservice{
- width: 100%;
-  height: 200px;
-  border: 1px solid var(--secondary);
+.ourservice{ 
+  border: 1px solid var(--section);
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
+  padding: 10px;
   flex-wrap: wrap;
+}
+
+
+.service{  
+  flex-basis: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  background-color: #fff; 
+  padding: 10px;
+
 }
 
 .service span p{
@@ -499,10 +501,7 @@ grid-area: content;
    color:#08baaa;  
   }
 
-  .ourservice{
-    display: flex;
-
-  }
+  
 
   
 
