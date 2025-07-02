@@ -271,12 +271,22 @@ grid-area: content;
 /*  Health Packages */
 
 
-.Featured-Health-Packages{
- 
+.Featured-Health-Packages{ 
+    align-items:center;
   text-align: center;   
-  background-color:var(--section);
-  padding: 10px 0 40px 0;  
+  background-color:var(--section); 
+  padding: 30px;  
 }
+
+
+.Featured-Health-Packages p{
+   font-size: 18px;
+    color: rgb(93, 92, 92);
+    padding: 10px 0 40px 0;   
+     
+    
+}
+
 .packages-card{  
   display: flex;
   justify-content: space-evenly;  
@@ -379,16 +389,17 @@ grid-area: content;
 /* Why choose our Lab section */
 
 .WhyChoose-text{  
+  align-items:center;
   text-align: center;   
-  background-color:var(--secondary);
-  
-   padding: 10px 0 40px 0;  
+  background-color:var(--section); 
+  padding: 30px; 
     
 }
 
 .WhyChoose-text p{
     font-size: 18px;
     color: rgb(93, 92, 92);
+    padding: 10px 0 40px 0;   
 }
 
 
