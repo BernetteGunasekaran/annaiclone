@@ -25,6 +25,24 @@ body{
 	height: 100;
  
 }
+
+  /* Comman style class */
+
+  .cm{ 
+    align-items:center;
+  text-align: center;   
+  background-color:var(--section); 
+  padding: 30px;  
+}
+
+
+.cm p{
+   font-size: 18px;
+    color: rgb(93, 92, 92);
+    padding: 10px 0 40px 0;   
+     
+    
+}
   /* Title section  */
 
 .title-section{
@@ -271,21 +289,7 @@ grid-area: content;
 /*  Health Packages */
 
 
-.Featured-Health-Packages{ 
-    align-items:center;
-  text-align: center;   
-  background-color:var(--section); 
-  padding: 30px;  
-}
 
-
-.Featured-Health-Packages p{
-   font-size: 18px;
-    color: rgb(93, 92, 92);
-    padding: 10px 0 40px 0;   
-     
-    
-}
 
 .packages-card{  
   display: flex;
@@ -388,21 +392,6 @@ grid-area: content;
 
 /* Why choose our Lab section */
 
-.WhyChoose-text{  
-  align-items:center;
-  text-align: center;   
-  background-color:var(--section); 
-  padding: 30px; 
-    
-}
-
-.WhyChoose-text p{
-    font-size: 18px;
-    color: rgb(93, 92, 92);
-    padding: 10px 0 40px 0;   
-}
-
-
 .reason{
   border: 1px solid var(--secondary);
   display: flex;
@@ -439,19 +428,7 @@ grid-area: content;
  
  /* Our services */
 
- .Our-services{  
-  align-items:center;
-  text-align: center;   
-  background-color:var(--section); 
-  padding: 30px;
-   
-}
-.Our-services p{
-    font-size: 18px;
-    color: rgb(93, 92, 92);
-    padding: 10px 0 40px 0;   
-    
-}
+ 
 .ourservice{ 
   border: 1px solid var(--section);
   display: flex;
