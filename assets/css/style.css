@@ -289,8 +289,6 @@ grid-area: content;
     border: solid 2px var(--primary);  
     position: relative; 
 }
-
-
 .mostpopular{
     padding: 5px;
     width: 50%;
