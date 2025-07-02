@@ -128,7 +128,7 @@ grid-area: content;
 .header-menu .header-menu-button{
     padding: 8px 20px;
     border-radius: 5px;
-	border: none;
+	  border: none;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
@@ -272,21 +272,21 @@ grid-area: content;
 
 
 .Featured-Health-Packages{
-    background-color: #e5e7eb;
-    text-align: center;
-
-   
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;   
+  background-color:#e5e7eb;
+  padding: 30px;
 
 }
-.health-text{
-    margin-bottom: 50px;
-}
 
-.packages-card{
-     display: flex;
-     gap: 30px;
-     margin-left: 30px;
-     flex-wrap: wrap;    
+
+.packages-card{  
+  display: flex;
+  justify-content: space-evenly;  
+  background-color: #e5e7eb;
+  flex-wrap: wrap;
 
 }
 
@@ -308,15 +308,15 @@ grid-area: content;
 }
 
 .price-card{
-  width: 300px;
-  padding: 24px; 
+  padding: 10px; 
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);  
   text-align: center;
   background: white;
   font-family: 'Segoe UI', sans-serif;
   transition: transform 0.3s;
- 
+  margin: 8px 0;
+  
   
 }
 .price-card:hover {
@@ -387,11 +387,12 @@ grid-area: content;
 
 /* Why choose our Lab section */
 
-.WhyChoose-text{
-   
-    padding: 50px;
-    background-color:var(--secondary);
-    text-align: center;
+.WhyChoose-text{  
+  display: flex;
+  flex-direction: column; 
+  text-align: center;   
+  background-color:var(--secondary);
+    
 }
 
 .WhyChoose-text p{
@@ -407,11 +408,12 @@ grid-area: content;
 
 .reason{
   width: 100%;
- 
+
   border: 1px solid var(--secondary);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-color: #fff;
   
 }
 
@@ -470,6 +472,8 @@ grid-area: content;
    border-radius: 50%;
   }
 
+  
+
 
   .service .one{   
    color: #f74546;  
@@ -493,6 +497,11 @@ grid-area: content;
 
   .service .six{   
    color:#08baaa;  
+  }
+
+  .ourservice{
+    display: flex;
+
   }
 
   
