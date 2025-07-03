@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            height: 0;
+            width: 0;
+            padding: 0;
+        }
+        .flex-layout {
+        display: flex;
+        min-height: 800vh;
+        width: 500px;
+ 
+             /* space between columns */
+}
+
+/* Both .column elements share this */
+.flex-layout .column {
+                  /* each column takes equal width */
+  background: #f9fafb;
+  
+}
+
+/* Right column splits into two rows */
+.flex-layout .column.right {
+  display: flex;
+  flex-direction: column;
+            
+   /* space between top & bottom rows */
+}
+
+/* Make each row fill 50% of the right column */
+.flex-layout .column.right .row {
+  background: #ffffff; 
+}
+    </style>
+</head>
+<body>
+
+    <div class="flex-layout">
+  <div class="column left">
+   <img src="assets/img/annailab logo.png" alt="Annai Diagnostics Logo" width="56" height="65"/>
+  </div>
+  <div class="column right">
+    <div class="row top">
+      <!-- Top half of right column -->
+      <h3>Right Top</h3>
+      <p>First row content.</p>
+    </div>
+    <div class="row bottom">
+      <!-- Bottom half of right column -->
+      <h3>Right Bottom</h3>
+      <p>Second row content.</p>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
