@@ -374,24 +374,35 @@ body {
 /* Why choose our Lab section */
 
 .reason {
-  display: flex;
-  justify-content: space-evenly;
+  display: flex; 
   background-color: var(--section);
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 2px 5px;
-  padding: 0 10px;
+  
+  text-align: justify; 
   background-color: #fff;
 }
 
-.reason1 {
-  text-align: center;
-  padding: 10px;
-  background-color: var(--secondary);
-  flex-basis: 200px;
+
+
+
+
+.reason1{
+  flex: 0 0 25%;
+  text-align:center;
+  background-color: var(--secondary);  
+  
+ 
+  height: auto; 
+
+}
+
+.reason1 h4{
+  margin-top: 10px;
 }
 
 .reason1 span {
-  padding: 10px;
+ padding: 15px 10px 10px 10px;
   border-radius: 50%;
   color: var(--primary);
   background-color: #e5e8f2;
@@ -406,9 +417,10 @@ body {
 .ourservice {
   border: 1px solid var(--section);
   display: flex;
-  justify-content: space-evenly;
-  gap: 6px 2px;
-  padding: 0 10px;
+  justify-content: center;
+  gap: 6px 6px; 
+  margin: 0 30px;
+  padding: 30px 10px;
   flex-wrap: wrap;
 }
 
@@ -419,22 +431,33 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   padding: 6px;
-  flex-basis: 180px;
+  width: 150px;
+ flex-grow: 1;
+
+  
 }
 .service span svg {
+  height: 24px;
+  width: 24px;
+}
+
+.service span  {
   height: 30px;
   width: 30px;
+  margin: 15px;
+  
 }
 .service svg {
   transition: transform 0.3s ease;
 }
 
 .service:hover svg {
-  transform: scale(1.7);
+  transform: scale(1.5);
 }
 
 .service span p {
   color: rgb(51, 51, 51);
+  
 }
 .service p {
   text-align: center;
@@ -451,26 +474,32 @@ body {
 
 .service .one {
   color: #f74546;
+  background-color:#fff;
 }
 
 .service .two {
   color: #00c669;
+  background-color:#fff;
 }
 
 .service .three {
   color: #2d7ff0;
+  background-color:#fff;
 }
 
 .service .four {
   color: #ad50f0;
+  background-color:#fff;
 }
 
 .service .five {
   color: #ff742a;
+  background-color:#fff;
 }
 
 .service .six {
   color: #08baaa;
+  background-color:#fff;
 }
 
 /* What Our Customers Say Section */
@@ -550,8 +579,9 @@ body {
   top: 0px;
 }
 #address {
-  margin-left: 15px;
+  margin-left: 8px;
   padding-bottom: 13px;
+ 
 }
 .direction {
   background-color: var(--primary);
@@ -594,26 +624,81 @@ body {
   color: var(--secondary);
   padding-top: 30px; */
 
+  display: flex; 
 
 
-  display: flex;
-  justify-content:space-evenly;
   color: var(--secondary);
   background-color: #101826;
-  padding: 70px 60px;
-  flex-wrap: wrap;
+  padding: 30px 30px;
+  flex-wrap:wrap;
+ 
+  
+}
+.cell{
+  
+  height: auto;  
+  
+  flex: 0 0 25%;  
+  
+ 
 }
 
-.lab-info {
-  display: flex;
-  flex-direction: column;
+.footer-logo-text .text1{    
+    padding: 2px;
+
+}
+
+#footer-item2 ul li:first-child{
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom:18px;
+
   
+}
+
+#footer-item2 ul li:first-child{
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom:18px;
+
+  
+}
+#footer-item2 ul li:first-child a{
+  color:var(--secondary);  
+}
+
+#footer-item2 {   
+  padding: 15px;
+ 
+}
+#footer-item3{ 
+ padding: 15px;
+}
+#footer-item4{ 
+  padding: 15px;
 }
 
 .lab-info-sub {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 20px;
+  position: relative;
+
+  
 }
+
+.footer-logo
+ {
+  position: absolute;  
+  top: 8px;
+}
+
+.footer-logo-text{
+  margin-left: 60px;
+
+}
+
+
 
 .text-sm {
   margin-left: 2px;
@@ -628,13 +713,8 @@ body {
   height: 18px;
 }
 
-.quick-link {
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-}
 
-.quick-link > :first-child {
+.quick-link  {
   margin-bottom: 10px;
 }
 
@@ -652,11 +732,7 @@ body {
 .footer-section li {
   color: rgb(203, 202, 202);
 }
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-}
+
 
 .contact-info ul {
   list-style: none;
@@ -666,17 +742,8 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-info .loction-info {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-}
 
-.loction-info {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
+
 
 .loction-info > :first-child {
   margin-bottom: 10px;
@@ -901,22 +968,17 @@ body {
   display:block;
   font-weight: 700;
 }
-.footer-section {
-  display: flex;  
-  justify-content:center;
-  background-color: #101826;
-  color: var(--secondary);
-  padding: 30px;
-  flex-direction: column;
-}
 
-.lab-info {
+
+#footer-item2 {   
+  padding: 10px;
   display: flex;
   flex-direction: column;
-
-}
-.span-row {
+  justify-content: center;
   
+}
+
+.span-row {  
  text-align: center;
   background-color: #101826;
   color: var(--secondary);
@@ -927,15 +989,10 @@ body {
 
 
 
-.quick-link {
-  display: flex;
-  flex-direction: column;
 
-}
 
-.quick-link > :first-child {
-  margin-bottom: 10px;
-}
+
+
 
 .quick-link ul {
   list-style: none;
@@ -951,11 +1008,7 @@ body {
 .footer-section li {
   color: rgb(203, 202, 202);
 }
-.contact-info {
-  display: flex;
-  flex-direction: column;
- 
-}
+
 
 .contact-info ul {
   list-style: none;
@@ -966,17 +1019,7 @@ body {
   margin-top: 10px;
 }
 
-.contact-info .loction-info {
-  display: flex;
-  flex-direction: column;
- 
-}
 
-.loction-info {
-  display: flex;
-  flex-direction: column;
-  
-}
 
 .loction-info > :first-child {
   margin-bottom: 10px;
@@ -986,7 +1029,22 @@ body {
 } 
 
 
+@media (max-width: 1024px) {
+  .cell {
+    flex: 0 0 50%;         /* 100% / 2 = 50% each */
+  }
+}
 
+/* ─── Mobile/Small: 1 column ─── */
+@media (max-width: 600px) {
+  .cell {
+    flex: 0 0 100%;        /* 100% / 1 = 100% each */
+    
+  }
+
+
+
+}
 
 
 
